@@ -66,7 +66,7 @@ body {
 }
 #cloud {
     z-index: 200;
-    width: 200px; height: 80px;
+    width: 350px; height: 80px;
     background: #BFF;
     background: linear-gradient(top, #BFF 5%, #DFF 100%);
     background: -webkit-linear-gradient(top, #FFF 1%, #BFF 100%);
@@ -97,15 +97,15 @@ body {
 
 @-webkit-keyframes moveclouds {
 	0% {margin-left:  -800px;}
-	100% {margin-left: 1200px;}
+	100% {margin-left: 1500px;}
 }
 @-moz-keyframes moveclouds {
 	0% {margin-left:  -800px;}
-	100% {margin-left: 1200px;}
+	100% {margin-left: 1500px;}
 }
 @-o-keyframes moveclouds {
 	0% {margin-left: -800px;}
-	100% {margin-left: 1200px;}
+	100% {margin-left: 1500px;}
 }
 #cloud1:after, #cloud1:before {
     content: '';
@@ -115,7 +115,7 @@ body {
 }
 #cloud1 {
     z-index: 200;
-    width: 200px; height: 80px;
+    width: 350px; height: 80px;
     background: #BFF;
     background: linear-gradient(top, #BFF 5%, #DFF 100%);
     background: -webkit-linear-gradient(top, #FFF 1%, #BFF 100%);
@@ -132,7 +132,7 @@ body {
     
 }
 .shadow {
-    width: 200px;
+    width: 350px;
     position: absolute; bottom: -10px; 
     background: #000;
     z-index: 10;
@@ -161,6 +161,29 @@ body {
    -webkit-animation: moontosun 50s linear infinite;
    -moz-animation: moontosun 50s linear infinite;
    -o-animation: moontosun 50s linear infinite;
+}
+
+.mountain {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    border-right: 300px solid transparent;
+    border-top: 300px solid transparent;
+    border-left: 300px solid transparent;
+    border-bottom: 300px solid #a1cadf;
+}
+.mountain:before {
+    top: -100px; right: -100px;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid #ffffff;
+}
+.mountain:after, .mountain:before {
+    content: '';
+    position: absolute;
+    z-index:12;
 }
 
 .mountain {
@@ -423,7 +446,7 @@ body {
 .star10 {
     position: absolute;
     top:0;
-    left: 60%;
+    left: 90%;
     width: 25px;
     height: 25px;
     border-radius: 30px;
@@ -439,11 +462,11 @@ body {
 }
 @-moz-keyframes star {
 	0% {margin-left:  -300px;}
-	100% {margin-left: 1200px;}
+	100% {margin-left: 1500px;}
 }
 @-o-keyframes star {
 	0% {margin-left: -300px;}
-	100% {margin-left: 1200px;}
+	100% {margin-left: 1500px;}
 }
 
 h1 {
@@ -471,6 +494,6 @@ audio {
     bottom: 0;
     margin: auto;
     z-index:999;
-    transform: translateX(-200px);
+    transform: translateX(200px);
     opacity:0;
 }
