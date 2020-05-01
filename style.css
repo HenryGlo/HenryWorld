@@ -1,11 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x:hidden;
-    overflow-y:hidden;    
+    overflow-x: hidden
 }
 .cont .sky {
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -13,7 +12,8 @@ body {
 	background-size: 600% 600%;
 	-webkit-animation: Gradient 50s ease infinite;
 	-moz-animation: Gradient 50s ease infinite;
-	animation: Gradient 50s ease infinite;
+    animation: Gradient 50s ease infinite;
+    overflow-x: hidden
 
 }
 @-webkit-keyframes Gradient {
@@ -94,16 +94,16 @@ body {
 }
 
 @-webkit-keyframes moveclouds {
-	0% {margin-left:  -800px;}
-	100% {margin-left: 1500px;}
+	0% {margin-left:  0px;}
+	100% {margin-left: 100vw;}
 }
 @-moz-keyframes moveclouds {
-	0% {margin-left:  -800px;}
-	100% {margin-left: 1500px;}
+	0% {margin-left:  0px;}
+	100% {margin-left:  100vw;}
 }
 @-o-keyframes moveclouds {
-	0% {margin-left: -800px;}
-	100% {margin-left: 1500px;}
+	0% {margin-left: 0px;}
+	100% {margin-left: 100vw;}
 }
 #cloud1:after, #cloud1:before {
     content: '';
@@ -145,7 +145,7 @@ body {
 }
 .cont .sky .moon {
     position: absolute;
-    background: radial-gradient(#d1d1d1, #f8f7b5, #ffe601);
+    background: radial-gradient(#d1d1d1, #fcf942, #ffe601);
     background-size: 600% 600%;
     width: 200px;
     height: 200px;
@@ -456,15 +456,15 @@ body {
 }
 @-webkit-keyframes star {
 	0% {top:  0px;opacity:0;}
-	100% {top:  100%;opacity:1;}
+	100% {top:  90%;opacity:1;}
 }
 @-moz-keyframes star {
-	0% {margin-left:  -300px;}
-	100% {margin-left: 1500px;}
+	0% {top:  0px;opacity:0;}
+	100% {top:  90%;opacity:1;}
 }
 @-o-keyframes star {
-	0% {margin-left: -300px;}
-	100% {margin-left: 1500px;}
+	0% {top:  0px;opacity:0;}
+	100% {top:  90%;opacity:1;}
 }
 
 h1 {
@@ -497,5 +497,73 @@ audio {
 }
 
 @media only screen and (min-width: 600px) {
-
+    .mooncont {
+        -webkit-animation: movecloudsres 20s linear infinite;
+        -moz-animation: movecloudsres 20s linear infinite;
+        -o-animation: movecloudsres 20s linear infinite;
+        animation: movecloudsres 20s linear infinite;
+    }
+    #cloud {
+        z-index: 200;
+        width: 350px; height: 80px;
+        background: #BFF;
+        background: linear-gradient(top, #BFF 5%, #DFF 100%);
+        background: -webkit-linear-gradient(top, #FFF 1%, #BFF 100%);
+        background: -moz-linear-gradient(top, #BFF 5%, #DFF 100%);
+        background: -ms-linear-gradient(top, #BFF 5%, #DFF 100%);
+        background: -o-linear-gradient(top, #BFF 5%, #DFF 100%);
+        top: 50px; left: 50px;
+        border-radius: 100px;
+        position: absolute;
+        margin: 120px auto 20px;
+        -webkit-animation: movecloudsres 20s linear infinite;
+        -moz-animation: movecloudsres 20s linear infinite;
+        -o-animation: movecloudsres 20s linear infinite;
+        animation: movecloudsres 20s linear infinite;
+        
+    }
+    #cloud1 {
+        z-index: 200;
+        width: 350px; height: 80px;
+        background: #BFF;
+        background: linear-gradient(top, #BFF 5%, #DFF 100%);
+        background: -webkit-linear-gradient(top, #FFF 1%, #BFF 100%);
+        background: -moz-linear-gradient(top, #BFF 5%, #DFF 100%);
+        background: -ms-linear-gradient(top, #BFF 5%, #DFF 100%);
+        background: -o-linear-gradient(top, #BFF 5%, #DFF 100%);
+        top: -60px; left: 30%;
+        border-radius: 100px;
+        position: absolute;
+        margin: 120px auto 20px;
+        -webkit-animation: movecloudsres 20s linear infinite;
+        -moz-animation: movecloudsres 20s linear infinite;
+        -o-animation: movecloudsres 20s linear infinite;
+        animation: movecloudsres 20s linear infinite;
+    }
+    .cont .sky {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: linear-gradient(270deg, #030142, #1a57ff, #4bc6ff);
+        background-size: 600% 600%;
+        -webkit-animation: Gradient 20s ease infinite !important;
+        -moz-animation: Gradient 20s ease infinite !important;
+        animation: Gradient 20s ease infinite !important;
+        overflow-x: hidden
+    
+    }
+    
+}
+@-webkit-keyframes movecloudsres {
+    0% {margin-left:  0px;}
+    100% {margin-left: 20vw;}
+}
+@-moz-keyframes movecloudsres {
+    0% {margin-left:  0px;}
+    100% {margin-left:  20vw;}
+}
+@-o-keyframes movecloudsres {
+    0% {margin-left: 0px;}
+    100% {margin-left: 20vw;}
 }
