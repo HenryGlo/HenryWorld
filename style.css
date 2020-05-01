@@ -2,9 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x:hidden;
-    overflow-y:hidden;
-    position: relative;
-    
+    overflow-y:hidden;    
 }
 .cont .sky {
     width: 100%;
@@ -496,4 +494,8 @@ audio {
     z-index:999;
     transform: translateX(200px);
     opacity:0;
+}
+
+@media only screen and (min-width: 600px) {
+
 }
