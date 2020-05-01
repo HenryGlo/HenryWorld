@@ -612,12 +612,12 @@ body {
        -moz-animation: moontosun 20s linear infinite;
        -o-animation: moontosun 20s linear infinite;
     }
-    .sky h1 {
+    h1 {
         font-size: 2em;
         top:100px;
         display:none;
     }
-    .sky audio {
+    audio {
         top: 230px;
         left: 0;
         right: 0;
