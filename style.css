@@ -464,7 +464,7 @@ body {
 	100% {top:  90%;opacity:1;}
 }
 
-h1 {
+.sky h1 {
     text-align: center;
     position: absolute;
     color: white;
@@ -481,7 +481,7 @@ h1 {
     opacity:0;
 }
 
-audio {
+.sky audio {
     position: absolute;
     top: -40px;
     left: 0;
@@ -612,11 +612,12 @@ audio {
        -moz-animation: moontosun 20s linear infinite;
        -o-animation: moontosun 20s linear infinite;
     }
-    h1 {
+    .sky h1 {
         font-size: 2em;
-        top:300px;
+        top:100px;
+        display:none;
     }
-    audio {
+    .sky audio {
         top: 230px;
         left: 0;
         right: 0;
@@ -627,7 +628,9 @@ audio {
         opacity:0;
         width: 100% !important;
     }
+
 }
+
 @-webkit-keyframes movecloudsres {
     0% {margin-left:  0px;}
     100% {margin-left: 20vw;}
