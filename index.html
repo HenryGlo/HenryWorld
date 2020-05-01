@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cont">
+        <div class="sky">
+            <h1>HENRY´S WORLD</h1>
+            <audio width="150px" height="25" allow="autoplay" autoplay="autoplay" src="for-river-piano-johnnys-version.mp3" controls="controls">If stream does not start automatically press the play button</audio>
+            </audio>
+            <div class="star"></div>
+            <div class="star1"></div>
+            <div class="star2"></div>
+            <div class="star3"></div>
+            <div class="star4"></div>
+            <div class="star5"></div>
+            <div class="star6"></div>
+            <div class="star7"></div>
+            <div class="star8"></div>
+            <div class="star9"></div>
+            <div class="star10"></div>
+            <div id="cloud">
+                <span class='shadow'></span>
+            </div>
+            <div id="cloud1">
+                <span class='shadow'></span>
+            </div>
+            <div class="mooncont">
+                <div class="moon">
+                </div>
+            </div>
+            <div class="mountain"></div>
+            <div class="mountain1"></div>
+            <div class="mountain2"></div>
+            <div class="mountain3"></div>
+            <div class="mountain4"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
+    <script>
+        TweenMax.to("h1", 3, { y: 0, opacity: 1, ease: Power2.easeIn });
+        TweenMax.to("audio", 3, { x: 0, opacity: 1, ease: Power2.easeIn }, "-=2");
+    </script>
+</body>
+
+</html>
