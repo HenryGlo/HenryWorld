@@ -66,7 +66,7 @@ body {
 }
 #cloud {
     z-index: 200;
-    width: 350px; height: 80px;
+    width: 200px; height: 80px;
     background: #BFF;
     background: linear-gradient(top, #BFF 5%, #DFF 100%);
     background: -webkit-linear-gradient(top, #FFF 1%, #BFF 100%);
@@ -97,15 +97,15 @@ body {
 
 @-webkit-keyframes moveclouds {
 	0% {margin-left:  -800px;}
-	100% {margin-left: 1500px;}
+	100% {margin-left: 1200px;}
 }
 @-moz-keyframes moveclouds {
 	0% {margin-left:  -800px;}
-	100% {margin-left: 1500px;}
+	100% {margin-left: 1200px;}
 }
 @-o-keyframes moveclouds {
 	0% {margin-left: -800px;}
-	100% {margin-left: 1500px;}
+	100% {margin-left: 1200px;}
 }
 #cloud1:after, #cloud1:before {
     content: '';
@@ -115,7 +115,7 @@ body {
 }
 #cloud1 {
     z-index: 200;
-    width: 350px; height: 80px;
+    width: 200px; height: 80px;
     background: #BFF;
     background: linear-gradient(top, #BFF 5%, #DFF 100%);
     background: -webkit-linear-gradient(top, #FFF 1%, #BFF 100%);
@@ -132,7 +132,7 @@ body {
     
 }
 .shadow {
-    width: 350px;
+    width: 200px;
     position: absolute; bottom: -10px; 
     background: #000;
     z-index: 10;
@@ -174,11 +174,11 @@ body {
     border-bottom: 300px solid #a1cadf;
 }
 .mountain:before {
-    top: -100px; right: -100px;
-    border-right: 100px solid transparent;
-    border-top: 100px solid transparent;
-    border-left: 100px solid transparent;
-    border-bottom: 100px solid #ffffff;
+    top: -200px; right: -200px;
+    border-right: 200px solid transparent;
+    border-top: 200px solid transparent;
+    border-left: 200px solid transparent;
+    border-bottom: 200px solid #ffffff;
 }
 .mountain:after, .mountain:before {
     content: '';
@@ -196,7 +196,7 @@ body {
     border-top: 300px solid transparent;
     border-left: 300px solid transparent;
     border-bottom: 300px solid #a1cadf70;
-    z-index: 100;
+    z-index: 1;
 }
 .mountain1:before {
     top: -100px; right: -100px;
@@ -221,6 +221,7 @@ body {
     border-top: 300px solid transparent;
     border-left: 300px solid transparent;
     border-bottom: 300px solid #a1cadf;
+    z-index: 10;
 }
 .mountain2:before {
     top: -100px; right: -100px;
@@ -247,20 +248,20 @@ body {
     border-top: 300px solid transparent;
     border-left: 300px solid transparent;
     border-bottom: 300px solid #a1cadfe5;
+    z-index: 3;
 }
 .mountain3:before {
-    top: -100px; right: -100px;
-    border-right: 100px solid transparent;
-    border-top: 100px solid transparent;
-    border-left: 100px solid transparent;
-    border-bottom: 100px solid #ffffffd0;
+    top: -60px; right: -60px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 60px solid #ffffffd0;
     
 }
 .mountain3:after, .mountain3:before {
     content: '';
     position: absolute;
     z-index:12;
-    
 }
 
 .mountain4 {
@@ -273,13 +274,14 @@ body {
     border-top: 300px solid transparent;
     border-left: 300px solid transparent;
     border-bottom: 300px solid #a1cadfe5;
+    z-index: 2;
 }
 .mountain4:before {
-    top: -100px; right: -100px;
-    border-right: 100px solid transparent;
-    border-top: 100px solid transparent;
-    border-left: 100px solid transparent;
-    border-bottom: 100px solid #ffffffd0;
+    top: -150px; right: -150px;
+    border-right: 150px solid transparent;
+    border-top: 150px solid transparent;
+    border-left: 150px solid transparent;
+    border-bottom: 150px solid #ffffffd0;
     
 }
 .mountain4:after, .mountain4:before {
@@ -421,7 +423,7 @@ body {
 .star10 {
     position: absolute;
     top:0;
-    left: 90%;
+    left: 60%;
     width: 25px;
     height: 25px;
     border-radius: 30px;
@@ -437,11 +439,11 @@ body {
 }
 @-moz-keyframes star {
 	0% {margin-left:  -300px;}
-	100% {margin-left: 1500px;}
+	100% {margin-left: 1200px;}
 }
 @-o-keyframes star {
 	0% {margin-left: -300px;}
-	100% {margin-left: 1500px;}
+	100% {margin-left: 1200px;}
 }
 
 h1 {
